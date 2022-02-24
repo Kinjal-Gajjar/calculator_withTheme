@@ -16,7 +16,6 @@ class _HomePageState extends State<HomePage> {
   late String operation;
 
   void btnclicked(String btnvalue) {
-    print(btnvalue);
     if (btnvalue == 'C') {
       textTodisplay = '';
       firstNum = 0;
