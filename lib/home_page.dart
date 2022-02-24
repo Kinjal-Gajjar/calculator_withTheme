@@ -28,6 +28,12 @@ class _HomePageState extends State<HomePage> {
       secondNum = 0;
       res = '';
       history = '';
+    } else if (btnvalue == '+/-') {
+      if (textTodisplay[0] != '-') {
+        res = '-' + textTodisplay;
+      } else {
+        res = textTodisplay.substring(1);
+      }
     } else if (btnvalue == '+' ||
         btnvalue == '-' ||
         btnvalue == 'X' ||
@@ -54,6 +60,7 @@ class _HomePageState extends State<HomePage> {
       }
       if (operation == '/') {
         res = (firstNum / secondNum).toString();
+        // res = (firstNum ~/ secondNum).toString(); integer value
         history =
             firstNum.toString() + operation.toString() + secondNum.toString();
       }
