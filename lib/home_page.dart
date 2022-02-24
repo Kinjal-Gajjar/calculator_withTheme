@@ -34,6 +34,8 @@ class _HomePageState extends State<HomePage> {
       } else {
         res = textTodisplay.substring(1);
       }
+    } else if (btnvalue == '<') {
+      res = textTodisplay.substring(0, textTodisplay.length - 1);
     } else if (btnvalue == '+' ||
         btnvalue == '-' ||
         btnvalue == 'X' ||
